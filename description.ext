@@ -1,0 +1,57 @@
+author			= "Bengi Logistics";
+
+briefingName = "Arsenal";
+onLoadName		= "Arsenal";
+// Name der Mission
+
+class Header
+{
+	gameType =  Zeus;
+	minPlayers =  1;
+	maxPlayers = 24;
+};
+
+skipLobby = 0;
+respawn=3;
+respawnOnStart=0;
+
+respawnDelay=5;
+respawnVehicleDelay = 10;
+
+respawnButton = 1;
+respawnDialog = 0;
+respawnTemplates[] = { "Counter", "Wave","MenuPosition" };
+
+briefing = 0;
+debriefing = 0;
+
+
+disabledAI = 1;
+
+
+// --- Arsenal System --- //
+
+
+class cfgFunctions
+{
+	class Arsenal_System
+	{
+		class main
+		{
+			file = "arsenalFunctions";
+			
+			class initArsenal
+			{
+				postInit = 1;
+			}; // fn_initArsenal
+			
+			class setArsenal
+			{
+			}; // fn_setArsenal
+			
+			class arsenal_Custom
+			{
+			}; // fn_arsenal_Custom
+		};
+	};
+};
