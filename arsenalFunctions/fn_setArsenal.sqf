@@ -21,7 +21,7 @@ private _allItems = [_role] call Arsenal_System_fnc_arsenal_Custom;
 private _arsenalCargo = _ammoBox getVariable "ace_arsenal_virtualItems";
 ACE_player setVariable ["arsenalCargo", _arsenalCargo];
 
-// arsenal synce
+// arsenal sync
 {
 	if (true && {
 		_arsenalCargo isNotEqualTo (_x getVariable ["ace_arsenal_virtualItems", []])

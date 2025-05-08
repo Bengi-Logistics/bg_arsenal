@@ -1,7 +1,7 @@
-// this function store items for each role and returns them
+// This function store items for each role and returns them
 
 scriptName "fn_arsenal_Custom";
-// file name
+// File name
 
 params ["_role"];
 
@@ -9,35 +9,13 @@ private _items = [];
 
 _items append (switch (_role) do
 {
-    case "sectioncommander":
+    // Replace "---ROLE---" with the desrired role name
+    // Put all item class names in [] in "" and sperated by ,
+    case "--ROLE--":
     {
         []
     };
-    case "riflemannlaw":
-    {
-        []
-    };
-    case "riflemanat":
-    {
-        []
-    };
-    case "eod":
-    {
-        []
-    };
-	case "autorifleman":
-    {
-        []
-    };
-	case "combatmedic":
-    {
-        []
-    };
-	case "breacher":
-    {
-        []
-    };
-	
+    
     default {
         hint "Error #100"
     };

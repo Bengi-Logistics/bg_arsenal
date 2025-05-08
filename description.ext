@@ -1,33 +1,5 @@
-author			= "Bengi Logistics";
-
-briefingName = "Arsenal";
-onLoadName		= "Arsenal";
-// Name der Mission
-
-class Header
-{
-	gameType =  Zeus;
-	minPlayers =  1;
-	maxPlayers = 24;
-};
-
-skipLobby = 0;
-respawn=3;
-respawnOnStart=0;
-
-respawnDelay=5;
-respawnVehicleDelay = 10;
-
-respawnButton = 1;
-respawnDialog = 0;
-respawnTemplates[] = { "Counter", "Wave","MenuPosition" };
-
-briefing = 0;
-debriefing = 0;
-
-
-disabledAI = 1;
-
+// --- Notes --- //
+// If you have a pre existing descritoon.ext add the arsenal sytem to the end
 
 // --- Arsenal System --- //
 
