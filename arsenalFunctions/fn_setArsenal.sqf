@@ -4,24 +4,23 @@ scriptName "fn_setArsenal";
 
 params ["_role","_ammoBox"];
 
+// In _allItems are items stored for the player role
 private _allItems = [_role] call Arsenal_System_fnc_arsenal_Custom;
-// in _allItems are items stored for the player role
 
+// Remove old Arsenal
 [_ammoBox, false] call ace_arsenal_fnc_removeBox;
-// remove old Arsenal
 
+// Remove old items
 [_ammoBox, true, false] call ace_arsenal_fnc_removeVirtualItems;
-// remove old items
 
+// Add items to the Arsenal
 [_ammoBox, _allItems, false] call ace_arsenal_fnc_addVirtualItems;
-// add items to the Arsenal
 
-
-// sinchronise virtual items on player and sync other arsenals
+// Sinchronise virtual items on player and sync other arsenals
 private _arsenalCargo = _ammoBox getVariable "ace_arsenal_virtualItems";
 ACE_player setVariable ["arsenalCargo", _arsenalCargo];
 
-// arsenal synce
+// Arsenal sync
 {
 	if (true && {
 		_arsenalCargo isNotEqualTo (_x getVariable ["ace_arsenal_virtualItems", []])

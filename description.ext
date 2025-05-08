@@ -1,33 +1,4 @@
-author			= "Bengi Logistics";
-
-briefingName = "Arsenal";
-onLoadName		= "Arsenal";
-// Name der Mission
-
-class Header
-{
-	gameType =  Zeus;
-	minPlayers =  1;
-	maxPlayers = 24;
-};
-
-skipLobby = 0;
-respawn=3;
-respawnOnStart=0;
-
-respawnDelay=5;
-respawnVehicleDelay = 10;
-
-respawnButton = 1;
-respawnDialog = 0;
-respawnTemplates[] = { "Counter", "Wave","MenuPosition" };
-
-briefing = 0;
-debriefing = 0;
-
-
-disabledAI = 1;
-
+// If there is already a description.ext (e.g. KP Liberation Mission File) add the Arsenal System to the end of the description.ext
 
 // --- Arsenal System --- //
 

@@ -1,7 +1,7 @@
-// this function store items for each role and returns them
+// This function store items for each role and returns them
 
+// File name
 scriptName "fn_arsenal_Custom";
-// file name
 
 params ["_role"];
 
@@ -9,31 +9,9 @@ private _items = [];
 
 _items append (switch (_role) do
 {
-    case "sectioncommander":
-    {
-        []
-    };
-    case "riflemannlaw":
-    {
-        []
-    };
-    case "riflemanat":
-    {
-        []
-    };
-    case "eod":
-    {
-        []
-    };
-	case "autorifleman":
-    {
-        []
-    };
-	case "combatmedic":
-    {
-        []
-    };
-	case "breacher":
+    // This is the role name that is used in the init name box in Arma 3
+    // Item classnames go in [] and are put between "" and each item sperated by ,
+    case "---ROLE---":
     {
         []
     };
